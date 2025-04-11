@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "playwright test --project=chromium",
+    "ui": "playwright test --ui --project=chromium",
+    "ui:local": "playwright test --ui --project=chromium_localhost",
+    "start:local": "playwright test --project=chromium_localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.11.30",
+    "dotenv": "^16.3.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "no-console": "error",
+    "eqeqeq": "error",
+    "quotes":["error","single",{"avoidEscape":true,"allowTemplateLiterals":true}]
+  },
+  "overrides": [
+    {
+      "files":["api/schemas/dataTransport.ts","api/schemas/traceability.ts"],
+      "rules":{
+        "quotes":"off"
+      }
+    }
+  ]
+}
